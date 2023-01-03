@@ -28,3 +28,18 @@ int FindSizeOfArr(string [] array)
     }
     return count;
 }
+
+string[] FindElements(string[] array, int arrSize)
+{
+    string[] newArray = new string[arrSize];
+    int index = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            newArray[index] = array[i];
+            index++;
+        }
+    }
+    return newArray;
+}
